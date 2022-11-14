@@ -27,10 +27,10 @@ for (let i = 0; i < cells.length; i++) {
     cells[i].addEventListener('click', () => {
         let cell = cells[i].innerHTML;
         if(flag) {
-            cell == 0 ? addCellPlayer1(i) : cell = cell;
+            cell.length == 0 ? addCellPlayer1(i) : cell = cell;
         } else {
             if(cells[i].innerHTML.length == 0) {
-                cell == 0 ? addCellPlayer2(i) : cell = cell;
+                cell.length == 0 ? addCellPlayer2(i) : cell = cell;
             }
         }
         // checkWinner();
